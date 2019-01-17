@@ -1,0 +1,50 @@
+.container{
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .box{
+     width: 100%;
+     height: 150px;
+  }
+
+  .content1{
+    background:blue;
+
+  }
+  
+  .content2{
+    background:rgba(0,20,100);
+
+  }
+  
+  .content3{
+    background:green;
+
+  }
+  
+  
+  @media screen and (min-width: 450px){
+
+      .content1{
+          width:25%;
+      }
+
+      .content2{
+        width:75%;
+    }
+  }
+  
+  
+  @media screen and (min-width: 550px){
+    
+      .content2{
+        width: 50%;
+      }
+
+      .content3{
+          width: 25%;
+      }
+
+  }
+  

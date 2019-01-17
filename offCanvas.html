@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout Shifter</title>
+
+    <link rel="stylesheet" href="./css/offCanvas.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+    <nav id="drawer" class="dark_blue"></nav>
+
+    <main class="light_blue">
+        <i id="icon_menu" class="fa fa-bars" aria-hidden="true"></i>
+    </main>
+
+    <script>
+       const menu = document.querySelector("#icon_menu");
+       const drawer = document.querySelector("#drawer");
+
+       menu.addEventListener('click', (e)=>{
+         drawer.classList.toggle('open');
+         e.stopPropagation();
+       })
+    </script>
+
+</body>
+
+</html>
